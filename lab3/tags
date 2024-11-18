@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-g3 -std=gnu99 ${WARNS}$/;"	m
+HISTORY_SIZE	shell.c	14;"	d	file:
+LD	Makefile	/^LD=ld$/;"	m
+LIBS	Makefile	/^LIBS=$/;"	m
+MAX_LINE	shell.c	13;"	d	file:
+WARNS	Makefile	/^WARNS=-Wall -Wextra -pedantic$/;"	m
+add_to_history	shell.c	/^void add_to_history(char inputBuffer[]) {$/;"	f
+add_to_history	shell.h	/^void add_to_history(char inputBuffer[]) {;$/;"	f
+find_and_prepare_from_history	shell.c	/^int find_and_prepare_from_history(char first_letter, char *inputBuffer, char *args[]) {$/;"	f
+handle_SIGINT	shell.c	/^void handle_SIGINT() {$/;"	f
+history	shell.c	/^char history[HISTORY_SIZE][MAX_LINE]; \/* History buffer to store commands *\/$/;"	v
+history_count	shell.c	/^int history_count = 0; \/* Total number of commands entered *\/$/;"	v
+main	shell.c	/^int main(void) {$/;"	f
+repeat_last_command	shell.c	/^void repeat_last_command(char *inputBuffer, char *args[]) {$/;"	f
+setup	shell.c	/^void setup(char inputBuffer[], char *args[], int *background) {$/;"	f
+tokenize_command	shell.c	/^void tokenize_command(char *command, char *args[]) {$/;"	f

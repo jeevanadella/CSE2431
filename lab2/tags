@@ -1,0 +1,31 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BUFFER_SIZE	buffer.c	7;"	d	file:
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-g3 -std=gnu99 ${WARNS}$/;"	m
+LD	Makefile	/^LD=ld$/;"	m
+LIBS	Makefile	/^LIBS=-lpthread$/;"	m
+OBJS	Makefile	/^OBJS = $(SRCS:.c=.o)$/;"	m
+SRCS	Makefile	/^SRCS = main.c buffer.c$/;"	m
+TARGET	Makefile	/^TARGET = bounded_buffer$/;"	m
+WARNS	Makefile	/^WARNS=-Wall -Wextra -pedantic$/;"	m
+buffer	buffer.c	/^buffer_item buffer[BUFFER_SIZE];$/;"	v
+buffer_destroy	buffer.c	/^void buffer_destroy() {$/;"	f
+buffer_init	buffer.c	/^void buffer_init() {$/;"	f
+buffer_item	buffer.c	/^typedef int buffer_item;$/;"	t	file:
+buffer_item	buffer.h	/^typedef int buffer_item;$/;"	t
+consumer	buffer.c	/^void *consumer() {$/;"	f
+count	buffer.c	/^int head = 0, tail = 0, count = 0;$/;"	v
+empty	buffer.c	/^sem_t empty;$/;"	v
+full	buffer.c	/^sem_t full;$/;"	v
+head	buffer.c	/^int head = 0, tail = 0, count = 0;$/;"	v
+insert_item	buffer.c	/^int insert_item(buffer_item item) {$/;"	f
+main	main.c	/^int main(int argc, char *argv[]) {$/;"	f
+mutex	buffer.c	/^pthread_mutex_t mutex;$/;"	v
+producer	buffer.c	/^void *producer() {$/;"	f
+remove_item	buffer.c	/^int remove_item(buffer_item *item) {$/;"	f
+tail	buffer.c	/^int head = 0, tail = 0, count = 0;$/;"	v
